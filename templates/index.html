@@ -1,0 +1,48 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+<html>
+    <head>
+        <title>
+            AI Text Summariser
+        </title>
+    </head>
+    <body>
+        <form action = "/predict" methods="post"><label for = 'text'>Enter Text</label>
+        <input type = "text" name ="text" required>
+        <input type = "submit" value = "Summarize the Text">
+        </form>
+        {% if sumbit %}
+        If % Summary %}
+        <textarea><p><strong> {{Summary}}</strong></p></textarea>
+        
+    </body>
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Text Summarizer</title>
+</head>
+<body>
+
+    <h2>AI Text Summarizer</h2>
+
+    <form action="/predict" method="post">
+        <input type="text" name="text" rows="10" cols="60" required {{ text }}><br><br>
+        <button type="submit">Summarize</button>
+    </form>
+
+    {% if Summary %}
+        <h3>Summary:</h3>
+       
+        <p>{{ Summary }}</p>
+    
+    {% endif %}
+
+</body>
+</html>
+>>>>>>> 8ecdd8b9f7525a125e6dedc6232f93890a0ab53b
+=======
+>>>>>>> refs/remotes/origin/main
