@@ -66,7 +66,7 @@ def predict():
 
         print("SUMMARY GENERATED:", Summary)
 
-        return render_template("index.html",Summary=Summary,text=text)
+        return render_template("index.html",summary=Summary,text=text)
 
     except Exception as e:
         return f"Error: {e}"
