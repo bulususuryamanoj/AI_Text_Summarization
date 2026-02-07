@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import nltk
 import re
+import os
 import heapq
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -71,4 +72,5 @@ def predict():
     except Exception as e:
         return f"Error: {e}"
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0',debug=False,port=port)
